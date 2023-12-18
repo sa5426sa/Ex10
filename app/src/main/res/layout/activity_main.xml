@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context="com.example.ex10.MainActivity">
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Users"
+            android:textStyle="bold"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/eTname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eTpass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/eTage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:onClick="usersdatain"
+                android:text="Enter Users data" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Grades"
+            android:textStyle="bold"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/eTsub"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Subject"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eTgrade"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Grade"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:onClick="gradesdatain"
+                android:text="Enter Grades data" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>
